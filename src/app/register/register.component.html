@@ -1,0 +1,20 @@
+<form class="mm-form">
+    <div class="form-group" >
+      <label for="exampleInputEmail1">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" [(ngModel)]='user.username' name='name'>
+      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1" [(ngModel)]='user.password' name='name'>
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Confirm Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" [(ngModel)]='confirmPassword' name='name'>
+      </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1" ngChecked="false">
+      <label class="form-check-label" for="exampleCheck1">Show password</label>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)='Register(user.username,user.password,confirmPassword)'>Submit</button>
+  </form>
