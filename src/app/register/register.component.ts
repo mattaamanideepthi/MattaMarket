@@ -22,6 +22,7 @@ export class RegisterComponent implements OnInit {
       alert("Username should not be empty")
     }
   }
+
   ngOnInit(): void {
     this.user={username:'',password:''}
   }
